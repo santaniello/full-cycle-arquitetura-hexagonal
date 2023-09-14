@@ -60,6 +60,10 @@ func NewProduct() *Product {
 	return &product
 }
 
+/*
+*
+Implementando a interface ProductInterface de forma implicita
+*/
 func (p *Product) IsValid() (bool, error) {
 	if p.Status == "" {
 		p.Status = DISABLED
